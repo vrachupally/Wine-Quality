@@ -1,0 +1,15 @@
+.jumbotron {
+    color: #900C3F;
+}
+
+#button {
+    background-color:#900C3F;
+    color: white;
+    /* text-color: white; */
+}
+
+.panel-body {
+    border-color: #900C3F;
+    border-radius: 10%;
+}
+
