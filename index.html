@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AI Sommelier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <img src = "images/red-wine-banner.jpeg" class="img-fluid" alt="Responsive image">
+    
+    <div class="jumbotron" style = "text-align: center">
+        <h1>How Good is Your Wine?</h1>
+        <br>
+        <h4>Enter the measures for your wine below and our AI sommelier will predict its quality</h4>
+    </div>
+    <div class="container">
+        <div class="row margin-top-50">
+            <div class="col-md-3">
+                <aside class="inputs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form id="form">
+                                <div class="form-group">
+                                    <ul class="list-group" id="inputs">
+                                        <li class="filter list-group-item">
+                                            <label>Fixed Acidity (g/L)</label>
+                                            <input class="form-control" id="input1" type="number" step=".1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Volatile Acidity (g/L)</label>
+                                            <input class="form-control" id="input2" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Citric Acid (g/L)</label>
+                                            <input class="form-control" id="input3" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Residual Sugar (g/L)</label>
+                                            <input class="form-control" id="input4" type="number" step=".1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Chlorides (g/L)</label>
+                                            <input class="form-control" id="input5" type="number" step=".001">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Free Sulfur Dioxide (g/L)</label>
+                                            <input class="form-control" id="input6" type="number" step="1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Total Sulfur Dioxide (g/L)</label>
+                                            <input class="form-control" id="input7" type="number" step="1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Density (g/mL)</label>
+                                            <input class="form-control" id="input8" type="number" step=".0001">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>pH</label>
+                                            <input class="form-control" id="input9" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Sulphates (g/L)</label>
+                                            <input class="form-control" id="input10" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label>Alcohol (% by volume)</label>
+                                            <input class="form-control" id="input11" type="number" step=".1">
+                                        </li>
+                                        <button id="button" type="submit" class="btn btn-default">Predict</button>
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </form>
+                        <br>
+
+                        <!-- <br>
+                        {{ prediction_text }} -->
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <br>
+        <footer class="footer">
+            <span class="bottom">*These measures can be obtained through a physicochemical lab test</span>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- <script src="static/data.js"></script> -->
+    <!-- <script src="static/app.js"></script> -->
+</body>
+
+</html>
