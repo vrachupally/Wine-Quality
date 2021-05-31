@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <img src = "images/red-wine-banner.jpeg" class="img-fluid" alt="Responsive image">
-    
-    <div class="jumbotron" style = "text-align: center">
+    <img src="images/red-wine-banner.jpeg" class="img-fluid" alt="Responsive image">
+
+    <div class="jumbotron" style="text-align: center">
         <h1>How Good is Your Wine?</h1>
         <br>
         <h4>Enter the measures for your wine below and our AI sommelier will predict its quality</h4>
@@ -28,68 +28,70 @@
                                 <div class="form-group">
                                     <ul class="list-group" id="inputs">
                                         <li class="filter list-group-item">
-                                            <label><a href="#" data-tooltip title="Something about fixed acidity">Fixed Acidity (g/L)</a></label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="A collective major of all the acids in the final wine. This value is the primary indicator of how 'acidic' the wine will be perceived by the consumer.">Fixed
+                                                    Acidity (g/L)</a></label>
                                             <input class="form-control" id="input1" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Volatile Acidity (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="An indicator of microbial spoilage. This is detected by the consumer as an 'off' aroma.">Volatile Acidity (g/L)</label>
                                             <input class="form-control" id="input2" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Citric Acid (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="Doesn't occur in large quantity in grapes, but it is an allowed additive to finished wine to add a 'brighter' flavor profile.">Citric Acid (g/L)</label>
                                             <input class="form-control" id="input3" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Residual Sugar (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="How much sugar is left over after fermentation. A wine is often considered 'dry' when this value is low.">Residual Sugar (g/L)</label>
                                             <input class="form-control" id="input4" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Chlorides (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="An indicator of the water used in irrigation of the grapes. Can be a factor in the 'minerality' of wine, but more research is needed.">Chlorides (g/L)</label>
                                             <input class="form-control" id="input5" type="number" step=".001">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Free Sulfur Dioxide (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="SO2 has been added to wine to increase its microbial stability since ancient Roman times. Free SO2 is effective at preventing microbial growth.">Free Sulfur Dioxide (g/L)</label> 
                                             <input class="form-control" id="input6" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Total Sulfur Dioxide (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="Free SO2 plus SO2 that has been bound to another particle. Once bound, SO2 has less antimicrobial benefits.">Total Sulfur Dioxide (g/L)</label>
                                             <input class="form-control" id="input7" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Density (g/mL)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="Density is negativelly correlated with alcohol, as alcohol is less dense than water and positively correlated with sugar.">Density (g/mL)</label>
                                             <input class="form-control" id="input8" type="number" step=".0001">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>pH</label>
+                                            <label data-toggle="popover" data-trigger="hover"  data-content="A measure of how acidic the wine is and affects the potency of SO2 against microbes and influences their growth. Lower values are more acidic.">pH</label>
                                             <input class="form-control" id="input9" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Sulphates (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"  data-content="Sulphates are formed when SO2 is oxidized becoming SO4. A high level is a possible indication of oxygen 'abuse' when SO2 is added.">Sulphates (g/L)</label>
                                             <input class="form-control" id="input10" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label>Alcohol (% by volume)</label>
+                                            <label data-toggle="popover" data-trigger="hover" data-content="A function of how much sugar was in the juice to start since this is converted by the yeast into ethanol. Higher levels indicate ‘riper’ fruit and may be associated with more ‘fruity’ aromas and less ‘green’ or ‘vegetal’ notes.
+                                            ">Alcohol (% by volume)</label>
                                             <input class="form-control" id="input11" type="number" step=".1">
                                         </li>
                                         <button id="button" type="submit" class="btn btn-default">Predict</button>
                                     </ul>
-                                    
-                                </div>
-                                
-                            </form>
-                        <br>
 
-                        <!-- <br>
+                                </div>
+
+                            </form>
+                            <br>
+
+                            <!-- <br>
                         {{ prediction_text }} -->
                         </div>
                     </div>
@@ -101,8 +103,8 @@
             </div>
 
             <div class="col-md-4">
-                <a href="assets/dashboard.html" data-tooltip title="Click on the chart to explore our data"><img src="images/download.jpeg" 
-                    width="300px" length="300px" role="button">   </a> 
+                <a href="assets/dashboard.html" data-tooltip title="Click on the chart to explore our data"><img
+                        src="images/download.jpeg" width="300px" length="300px" role="button"> </a>
             </div>
         </div>
         <br>
@@ -111,10 +113,23 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-tooltip]').tooltip();
+        });
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
     <!-- <script src="static/data.js"></script> -->
     <!-- <script src="static/app.js"></script> -->
+    <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
 </body>
 
 </html>
