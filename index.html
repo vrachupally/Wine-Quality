@@ -13,24 +13,25 @@
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #900C3F;">
         <a class="navbar-brand" href="index.html" style="color:honeydew">AI Sommelier</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="assets/dashboard.html" style="color:honeydew">Dashboard</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="assets/data.html" style="color:honeydew">Data</a>
-              </li>
-            
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/dashboard.html" style="color:honeydew">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/data.html" style="color:honeydew">Data</a>
+                </li>
+
+            </ul>
         </div>
     </nav>
 
-    <img src="images/red-wine-banner.jpeg" class="img-fluid" alt="Responsive image">
+    <img src="images/red-wine-banner.jpeg" class="mx-auto d-block img-fluid" alt="Responsive image">
 
     <div class="jumbotron" style="text-align: center">
         <h1>How Good is Your Wine?</h1>
@@ -47,53 +48,71 @@
                                 <div class="form-group">
                                     <ul class="list-group" id="inputs">
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="A collective measure of all the acids in the final wine. This value is the primary indicator of how 'acidic' the wine will be perceived by the consumer.">Fixed
-                                                    Acidity (g/L)</a></label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="A collective measure of all the acids in the final wine. This value is the primary indicator of how 'acidic' the wine will be perceived by the consumer.">Fixed
+                                                Acidity (g/L)</a></label>
                                             <input class="form-control" id="input1" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="An indicator of microbial spoilage. This is detected by the consumer as an 'off' aroma.">Volatile Acidity (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="An indicator of microbial spoilage. This is detected by the consumer as an 'off' aroma.">Volatile
+                                                Acidity (g/L)</label>
                                             <input class="form-control" id="input2" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="Doesn't occur in large quantities in grapes, but it is an allowed additive to finished wine to add a 'brighter' flavor profile.">Citric Acid (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Doesn't occur in large quantities in grapes, but it is an allowed additive to finished wine to add a 'brighter' flavor profile.">Citric
+                                                Acid (g/L)</label>
                                             <input class="form-control" id="input3" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="How much sugar is left over after fermentation. A wine is often considered 'dry' when this value is low.">Residual Sugar (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="How much sugar is left over after fermentation. A wine is often considered 'dry' when this value is low.">Residual
+                                                Sugar (g/L)</label>
                                             <input class="form-control" id="input4" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="An indicator of the water used in irrigation of the grapes. Can be a factor in the 'minerality' of wine, but more research is needed.">Chlorides (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="An indicator of the water used in irrigation of the grapes. Can be a factor in the 'minerality' of wine, but more research is needed.">Chlorides
+                                                (g/L)</label>
                                             <input class="form-control" id="input5" type="number" step=".001">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="SO2 has been added to wine to increase its microbial stability since ancient Roman times. Free SO2 is effective at preventing microbial growth.">Free Sulfur Dioxide (g/L)</label> 
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="SO2 has been added to wine to increase its microbial stability since ancient Roman times. Free SO2 is effective at preventing microbial growth.">Free
+                                                Sulfur Dioxide (g/L)</label>
                                             <input class="form-control" id="input6" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="Free SO2 plus SO2 that has been bound to another particle. Once bound, SO2 has less antimicrobial benefits.">Total Sulfur Dioxide (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Free SO2 plus SO2 that has been bound to another particle. Once bound, SO2 has less antimicrobial benefits.">Total
+                                                Sulfur Dioxide (g/L)</label>
                                             <input class="form-control" id="input7" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover" data-content="Density is negativelly correlated with alcohol, as alcohol is less dense than water, and positively correlated with sugar.">Density (g/mL)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Density is negativelly correlated with alcohol, as alcohol is less dense than water, and positively correlated with sugar.">Density
+                                                (g/mL)</label>
                                             <input class="form-control" id="input8" type="number" step=".0001">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover"  data-content="A measure of how acidic the wine is, which affects the potency of SO2 against microbes and influences their growth. Lower values are more acidic.">pH</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="A measure of how acidic the wine is, which affects the potency of SO2 against microbes and influences their growth. Lower values are more acidic.">pH</label>
                                             <input class="form-control" id="input9" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
-                                            <label data-toggle="popover" data-trigger="hover"  data-content="Sulphates are formed when SO2 is oxidized becoming SO4. A high level is a possible indication of oxygen 'abuse' when SO2 is added.">Sulphates (g/L)</label>
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Sulphates are formed when SO2 is oxidized becoming SO4. A high level is a possible indication of oxygen 'abuse' when SO2 is added.">Sulphates
+                                                (g/L)</label>
                                             <input class="form-control" id="input10" type="number" step=".01">
                                         </li>
 
@@ -102,7 +121,8 @@
                                             ">Alcohol (% by volume)</label>
                                             <input class="form-control" id="input11" type="number" step=".1">
                                         </li>
-                                        <button id="button" type="submit" class="btn btn-default">Predict</button>
+                                        <button id="button" type="button" class="btn btn-default" data-toggle="modal"
+                                            data-target="#mymodal">Predict</button>
                                     </ul>
 
                                 </div>
@@ -116,13 +136,33 @@
                     </div>
                 </aside>
             </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="modal" id="mymodal">
+                    <div class="modal-dialogue">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title">Your Wine Score</h2>
+                                <buttom class="close" type="button" data-dismiss="modal">x</buttom>
+                                
+                            </div>
+                            <div class="modal-body">
+                                <p>Your expected wine score is ? out of 10</p>
+                                <p>See how your score compares to other wines on our Dashboard and Data pages!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col-md-9">
-                <iframe src="https://onedrive.live.com/embed?cid=B8D7928BD65603AE&amp;resid=B8D7928BD65603AE%212652&amp;authkey=AJhz0-Csk0DfSec&amp;em=2&amp;wdAr=1.7777777777777777" width="700px" height="442px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                <iframe
+                    src="https://onedrive.live.com/embed?cid=B8D7928BD65603AE&amp;resid=B8D7928BD65603AE%212652&amp;authkey=AJhz0-Csk0DfSec&amp;em=2&amp;wdAr=1.7777777777777777"
+                    width="700px" height="442px" frameborder="0">This is an embedded <a target="_blank"
+                        href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                        href="https://office.com/webapps">Office</a>.</iframe>
                 <br>
-            <!-- </div> -->
+                <!-- </div> -->
 
-            <!-- <div class="col-md-4"> -->
+                <!-- <div class="col-md-4"> -->
                 <a href="assets/dashboard.html" data-tooltip title="Click on the chart to explore our data"><img
                         src="images/download.jpeg" width="300px" length="300px" role="button"> </a>
             </div>
@@ -131,7 +171,8 @@
         <footer class="footer">
             <span class="bottom">*These measures can be obtained through a physicochemical lab test</span>
             <br>
-            <span class="bottom">Citation: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties.
+            <span class="bottom">Citation: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine
+                preferences by data mining from physicochemical properties.
                 In Decision Support Systems, Elsevier, 47(4):547-553, 2009. </span>
         </footer>
     </div>
