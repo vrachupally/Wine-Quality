@@ -33,5 +33,5 @@ function runEnter() {
     var inputValue11 = input11.property("value")
 
     var user_wine = [inputValue1, inputValue2,inputValue3, inputValue4, inputValue5, inputValue6, inputValue7, inputValue8, inputValue9, inputValue10, inputValue11]
-    console.log("user_wine: " user_wine)
+    console.log("user_wine: ", user_wine)
 }
