@@ -124,19 +124,19 @@
                                         <button id="button" type="button" class="btn btn-default" data-toggle="modal"
                                             data-target="#mymodal">Predict</button>
                                     </ul>
-
+                                    <br>
+                                    {{ prediction_text }}
                                 </div>
+                                <br>
+
 
                             </form>
-                            <br>
 
-                            <!-- <br>
-                        {{ prediction_text }} -->
                         </div>
                     </div>
                 </aside>
             </div>
-            
+
             <div class="col-md-1">
 
             </div>
@@ -148,10 +148,10 @@
                             <div class="modal-header">
                                 <h2 class="modal-title">Your Wine Score</h2>
                                 <buttom class="close" type="button" data-dismiss="modal">x</buttom>
-                                
+
                             </div>
                             <div class="modal-body">
-                                <p>Your expected wine score is ? out of 10</p>
+                                <p>{{prediction_text}}</p>
                                 <p>See how your score compares to other wines on our Dashboard and Data pages!</p>
                             </div>
                         </div>
@@ -195,9 +195,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <!-- <script src="static/data.js"></script> -->
-    <!-- <script src="static/app.js"></script> -->
-    <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+    <script src="static/js/app.js"></script>
 </body>
 
 </html>
