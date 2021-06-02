@@ -20,10 +20,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-tabs">
                     <a class="nav-link" href="assets/dashboard.html" style="color:honeydew">Dashboard</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-tabs">
                     <a class="nav-link" href="assets/data.html" style="color:honeydew">Data</a>
                 </li>
 
@@ -36,7 +36,7 @@
     <div class="jumbotron" style="text-align: center">
         <h1>How Good is Your Wine?</h1>
         <br>
-        <h4>Enter the measures for your wine below and our AI sommelier will predict its quality</h4>
+        <h4>Enter the measures for your wine in the form below and our AI sommelier will predict its quality</h4>
     </div>
     <div class="container">
         <div class="row margin-top-50">
@@ -51,14 +51,14 @@
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="A collective measure of all the acids in the final wine. This value is the primary indicator of how 'acidic' the wine will be perceived by the consumer.">Fixed
                                                 Acidity (g/L)</a></label>
-                                            <input class="form-control" id="input1" type="number" step=".1">
+                                            <input class="form-control" id="input6" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="An indicator of microbial spoilage. This is detected by the consumer as an 'off' aroma.">Volatile
                                                 Acidity (g/L)</label>
-                                            <input class="form-control" id="input2" type="number" step=".01">
+                                            <input class="form-control" id="input1" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
@@ -72,54 +72,54 @@
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="How much sugar is left over after fermentation. A wine is often considered 'dry' when this value is low.">Residual
                                                 Sugar (g/L)</label>
-                                            <input class="form-control" id="input4" type="number" step=".1">
+                                            <input class="form-control" id="input5" type="number" step=".1">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="An indicator of the water used in irrigation of the grapes. Can be a factor in the 'minerality' of wine, but more research is needed.">Chlorides
                                                 (g/L)</label>
-                                            <input class="form-control" id="input5" type="number" step=".001">
+                                            <input class="form-control" id="input7" type="number" step=".001">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="SO2 has been added to wine to increase its microbial stability since ancient Roman times. Free SO2 is effective at preventing microbial growth.">Free
                                                 Sulfur Dioxide (g/L)</label>
-                                            <input class="form-control" id="input6" type="number" step="1">
+                                            <input class="form-control" id="input8" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="Free SO2 plus SO2 that has been bound to another particle. Once bound, SO2 has less antimicrobial benefits.">Total
                                                 Sulfur Dioxide (g/L)</label>
-                                            <input class="form-control" id="input7" type="number" step="1">
+                                            <input class="form-control" id="input9" type="number" step="1">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="Density is negativelly correlated with alcohol, as alcohol is less dense than water, and positively correlated with sugar.">Density
                                                 (g/mL)</label>
-                                            <input class="form-control" id="input8" type="number" step=".0001">
+                                            <input class="form-control" id="input11" type="number" step=".0001">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="A measure of how acidic the wine is, which affects the potency of SO2 against microbes and influences their growth. Lower values are more acidic.">pH</label>
-                                            <input class="form-control" id="input9" type="number" step=".01">
+                                            <input class="form-control" id="input10" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover"
                                                 data-content="Sulphates are formed when SO2 is oxidized becoming SO4. A high level is a possible indication of oxygen 'abuse' when SO2 is added.">Sulphates
                                                 (g/L)</label>
-                                            <input class="form-control" id="input10" type="number" step=".01">
+                                            <input class="form-control" id="input2" type="number" step=".01">
                                         </li>
 
                                         <li class="filter list-group-item">
                                             <label data-toggle="popover" data-trigger="hover" data-content="A function of how much sugar was in the juice to start since this is converted by the yeast into ethanol. Higher levels indicate ‘riper’ fruit and may be associated with more ‘fruity’ aromas and less ‘green’ or ‘vegetal’ notes.
                                             ">Alcohol (% by volume)</label>
-                                            <input class="form-control" id="input11" type="number" step=".1">
+                                            <input class="form-control" id="input4" type="number" step=".1">
                                         </li>
                                         <button id="button" type="button" class="btn btn-default" data-toggle="modal"
                                             data-target="#mymodal">Predict</button>
@@ -136,7 +136,11 @@
                     </div>
                 </aside>
             </div>
-            <div class="col-md-1"></div>
+            
+            <div class="col-md-1">
+
+            </div>
+
             <div class="col-md-8">
                 <div class="modal" id="mymodal">
                     <div class="modal-dialogue">
@@ -163,7 +167,7 @@
                 <!-- </div> -->
 
                 <!-- <div class="col-md-4"> -->
-                <a href="assets/dashboard.html" data-tooltip title="Click on the chart to explore our data"><img
+                <a href="assets/dashboard.html" data-tooltip title="Click on the chart to explore our dashboard"><img
                         src="images/download.jpeg" width="300px" length="300px" role="button"> </a>
             </div>
         </div>
