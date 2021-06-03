@@ -11,6 +11,18 @@ model = pickle.load(open('finalized_model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/dashboard.html')
+def dashboard():
+    return render_template('dashboard.html')
+
+@app.route('/data.html')
+def data():
+    return render_template('data.html')
+
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
 @app.route('/predict',methods=['POST','GET'])   
 def predict():
 
