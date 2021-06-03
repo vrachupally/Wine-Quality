@@ -12,3 +12,12 @@
     border-color: #900C3F;
     border-radius: 10%;
 }
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
