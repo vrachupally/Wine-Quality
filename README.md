@@ -34,4 +34,6 @@ Our files and their purpose is outlined below:
     - requirements.txt contains all our imported libraries (note: in lieu of using a requirements.txt, you can use pipfile and pipfile.lock)
 
 Visualizations
-Using Tableau, we created an interactive dashboard. The dashboard will display modelswhich indicate how the taster may rate the quality of the wine. The bar graph displays the most influential variables and their distribution with each quality score. The box and whisker plots display the most common variables and their distribution with each quality class. The bell curve represents the overall frequency of quality. Lastly, the correlation matrix describes the relationship between each variable and quality.
+Using Tableau, we created an interactive dashboard. The dashboard will display modelswhich indicate how the taster may rate the quality of the wine. The bar graph displays the most influential variables and their distribution with each quality score. The box and whisker plots display the most common variables and their distribution with each quality class. The bell curve represents the overall frequency of quality. Lastly, the correlation matrix describes the relationship between each variable and quality. 
+
+![Untitled](https://user-images.githubusercontent.com/72583942/121259522-3d036800-c87e-11eb-8318-a4395da1b50c.jpg)
